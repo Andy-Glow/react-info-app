@@ -1,0 +1,218 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-content {
+    background: var(--modal-window-color);
+    color: var(--main-text-color);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100vw;
+    position: relative;
+    transform: translateY(-30px);
+    transition:
+      transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+      // Пружинистая анимация
+      opacity 0.4s ease;
+
+    h2,
+    p,
+    div {
+      margin: 0.3vw;
+    }
+
+    .modal-backdrop.show & {
+      transform: translateY(0);
+    }
+
+    .social-buttons-container {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+
+      .social-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        width: 200px;
+        border-radius: 55px;
+        background: black;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        border: none;
+        padding: 0 20px;
+
+        &.telegram {
+          background: #2f9fcf url("/telegram.png") no-repeat 30px center / 30px;
+          padding-left: 50px;
+          box-shadow: 0 4px 0 darken(#2f9fcf, 10%);
+          border: 1px solid darken(#2f9fcf, 15%);
+        }
+
+        &.email {
+          background: #2f9fcf url("/email.png") no-repeat 30px center / 30px;
+          padding-left: 50px;
+          box-shadow: 0 4px 0 darken(#2f9fcf, 10%);
+          border: 1px solid darken(#2f9fcf, 15%);
+        }
+
+        &:hover {
+          background-color: #2882a8;
+          color: #eeebff;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  outline: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 2px;
+    background-color: #949494;
+    transition: background-color 0.3s;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: var(--modal-close-button);
+  }
+}
+
+.social-button {
+  animation: buttonAppear 0.5s ease forwards;
+  opacity: 0;
+
+  @for $i from 1 through 2 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+@keyframes buttonAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+  .tag {
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+    background: var(--main-elements-color);
+    color: var(--tag-text-color);
+    margin: 5px 10px 0 0;
+    padding: 8px 22px 8px 8px;
+    border-radius: 24px;
+
+    .tag-icon {
+      margin: -10px;
+      padding: 0;
+      position: relative;
+      content: url(/check.png);
+      background: none;
+      scale: 0.45;
+      height: 50px;
+    }
+  }
+}
+
+.btn {
+  position: relative;
+  height: 55px;
+  width: 222px;
+  border-radius: 60px;
+  background: #2f9fcf;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  margin-right: 2%;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 0 darken(#2f9fcf, 10%);
+  border: 1px solid darken(#2f9fcf, 15%);
+
+  &:hover {
+    filter: drop-shadow(0px 0px 15px #267fa5);
+
+    &::before {
+      transform: rotate(-20deg) translateX(300px);
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 30px;
+    background: #ffffffbd;
+    filter: blur(2px);
+    transition: 0.55s;
+    transform: rotate(-20deg) translateX(-50px) translateY(-50px);
+  }
+}
