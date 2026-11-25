@@ -40,4 +40,4 @@
 *   **[Portfolio R3F](https://andy-glow.github.io/portfolio-r3f-app/)** — Интерактивное 3D-портфолио *( [Исходный код](https://github.com/Andy-Glow/portfolio-r3f-app) )*
 *   **[Bike Configurator](https://andy-glow.github.io/bike-configurator-app/)** — E-commerce 3D-конфигуратор велосипедов с корзиной и каталогом *( [Исходный код](https://github.com/Andy-Glow/bike-configurator-app) )*
 *   **[Floating Portals](https://andy-glow.github.io/floating-portals-r3f-app/)** — 3D-шоурум портал с эффектом параллакса *( [Исходный код](https://github.com/Andy-Glow/floating-portals-r3f-app) )*
-*   **[React Car ThreeFiber](https://andy-glow.github.io/react-car-threefiber-app/)** — 3D-витрина автомобиля с изменяемым пресетом графики и хотспотами*( [Исходный код](https://github.com/Andy-Glow/react-car-threefiber-app) )*
+*   **[React Car ThreeFiber](https://andy-glow.github.io/react-car-threefiber-app/)** — 3D-витрина автомобиля с изменяемым пресетом графики и хотспотами *( [Исходный код](https://github.com/Andy-Glow/react-car-threefiber-app) )*
