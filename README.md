@@ -1,16 +1,30 @@
-# React + Vite
+# Портфолио React-разработчика
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Персональный сайт-портфолио, в котором есть информация о специалисте, небольшие интерактивные проекты, а так же ссылки на более крупные работы.
 
-Currently, two official plugins are available:
+**[Ссылка на демо проекта](https://andy-glow.github.io/react-info-app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Блок "Примеры работ"
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Счётчик**: классический счётчик на React.
+- **Модальное окно**: Пример реализации модального окна в приложении.
+- **Викторина**: Небольшая викторина по программированию.
+- **Список пользователей**: Список с возможностью добавления/удаления и интерактивным поиском.
+- **Конвертер валют**: Конвертер с четырьмя видами валют.
+- **Фотоколлекция**: Коллекция фото с возможностью фильтрации и поиска.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Блок "Отдельные проекты"
+
+- **Приложение "Список задач"**: ТReactJS + Хуки / кастомные хуки, Использование Local Storage, SCSS / CSS-модули, React Context, Роутинг
+  Возможность добавления/удаления задачи, поиска и отметки о выполнении.
+  **[Ссылка на демо проекта](https://andy-glow.github.io/todo-react/)**
+- **Приложение "Кросовки"**: ReactJS + Хуки, Axios, SCSS / CSS-модули, React Context, React Router, React Skeleton, Backend-сервер Mokky.dev
+  Пример сайта с кросовками. Реализовано добавление в корзину, избранное. Есть списки, фильтрация, поиск. Информация подтягивается с бэкенд-сервера.
+  **[Ссылка на демо проекта](https://andy-glow.github.io/React-Sneakers/)**
+
+---
+
