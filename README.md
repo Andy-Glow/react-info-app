@@ -26,3 +26,18 @@
 
 *   **Стек:** ReactJS + Хуки, Axios, SCSS / CSS-модули, React Context, React Router, React Skeleton, Backend-сервер Mokky.dev.
 *   **Функционал:** Добавление в корзину, избранное, списки товаров, фильтрация и поиск. Данные подтягиваются с бэкенд-сервера.
+
+
+---
+
+
+---
+
+### 🔥 Мои последние проекты (React + Three.js / 3D)
+
+Я двигаюсь вперёд и активно развиваюсь в направлении интерактивного 3D в вебе. Вот мои последние работы, которые демонстрируют текущий уровень:
+
+*   **[Portfolio R3F](https://andy-glow.github.io/portfolio-r3f-app/)** — Интерактивное 3D-портфолио *( [Исходный код](https://github.com/Andy-Glow/portfolio-r3f-app) )*
+*   **[Bike Configurator](https://andy-glow.github.io/bike-configurator-app/)** — E-commerce 3D-конфигуратор велосипедов с корзиной и каталогом *( [Исходный код](https://github.com/Andy-Glow/bike-configurator-app) )*
+*   **[Floating Portals](https://andy-glow.github.io/floating-portals-r3f-app/)** — 3D-шоурум портал с эффектом параллакса *( [Исходный код](https://github.com/Andy-Glow/floating-portals-r3f-app) )*
+*   **[React Car ThreeFiber](https://andy-glow.github.io/react-car-threefiber-app/)** — 3D-витрина автомобиля с возможностью кастомизации *( [Исходный код](https://github.com/Andy-Glow/react-car-threefiber-app) )*
